@@ -5,11 +5,11 @@ class Board
     display_line
     ("A".."C").each do |b|
       puts  " | #{square += 1} | #{square += 1} | #{square += 1} |"
+      display_line
     end
-    display_line
   end
 
   private def display_line
-    puts " -------------"
+    puts " +---+---+---+"
   end
 end
