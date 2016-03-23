@@ -4,14 +4,14 @@ require './tic_tac_toe.rb'
 
 class TicTacToeTest < Minitest::Test
 
-  def test_grid_class_exists
-    assert Grid
+  def test_board_class_exists
+    assert Board
   end
 
-  def test_display_empty_grid
-    grid = Grid.new
-    assert_output(empty_grid) do
-      grid.display
+  def test_display_empty_board
+    grid = Board.new
+    assert_output(empty_board) do
+      board.display
     end
   end
 end
