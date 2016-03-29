@@ -1,4 +1,5 @@
 require './board.rb'
 
 @board = Board.new
-@board.display_board
+@board.print_directions
+@board.print_board
