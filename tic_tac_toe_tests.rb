@@ -1,6 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 require './tic_tac_toe.rb'
+require './moves.rb'
 
 class TicTacToeTest < Minitest::Test
 
@@ -18,6 +19,10 @@ class TicTacToeTest < Minitest::Test
 
   def test_human_player_has_default_name
     assert_equal "Player One", HumanPlayer.new.name
+  end
+
+  def test_moves_class_exists
+    assert Moves
   end
 
 end
