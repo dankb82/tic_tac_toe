@@ -8,10 +8,8 @@ class TicTacToeTest < Minitest::Test
     assert Board
   end
 
-  def test_display_empty_board
-    grid = Board.new
-    assert_output(empty_board) do
-      board.display
-    end
+  def test_human_player_class_exists
+    assert HumanPlayer
   end
+
 end
