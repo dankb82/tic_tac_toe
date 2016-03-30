@@ -12,4 +12,8 @@ class TicTacToeTest < Minitest::Test
     assert HumanPlayer
   end
 
+  def test_human_player_can_have_name
+    assert_equal "Dan", HumanPlayer.new("Dan").name
+  end
+
 end
